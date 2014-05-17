@@ -1,0 +1,4 @@
+<h1><i class="glyphicon glyphicon-plus"></i> <%= @todo_list.title %> - Adding Todo List Item</h1>
+<%= form_for [@todo_list, @todo_item] do |form| %>
+    <%= render partial: form %>
+<% end %>
