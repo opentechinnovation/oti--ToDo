@@ -30,7 +30,9 @@ group :development, :test do
     gem 'rspec-rails', '~> 2.0'
 end
 
-gem 'pg', '~> 0.17.1'
+group :production do
+  gem 'pg', '~> 0.17.1'
+end
 
 group :test do
     gem 'capybara', '~> 2.1.0'
