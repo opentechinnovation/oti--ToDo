@@ -30,6 +30,9 @@ group :development, :test do
     gem 'rspec-rails', '~> 2.0'
 end
 
+
+gem 'sprockets', '~> 2.11.0'
+
 group :production do
   gem 'pg', '~> 0.17.1'
 end
