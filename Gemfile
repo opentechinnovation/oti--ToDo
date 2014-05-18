@@ -30,8 +30,6 @@ group :development, :test do
     gem 'rspec-rails', '~> 2.0'
 end
 
-gem 'ruby', ' ~> 2.0.0'
-
 gem 'sprockets', '~> 2.11.0'
 
 
