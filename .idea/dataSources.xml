@@ -1,18 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2446657646">
-    <data-source source="LOCAL" name="Rails odot: development" uuid="7c3ad0a5-a054-4d55-b360-6fbba108ba4e">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\david_000\Desktop\odot\db\development.sqlite3</jdbc-url>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails odot: test" uuid="452ae144-ed08-4469-8536-5ec87cef2f05">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\david_000\Desktop\odot\db\test.sqlite3</jdbc-url>
-      <libraries />
-    </data-source>
-  </component>
-</project>
+<project version="4" />
 

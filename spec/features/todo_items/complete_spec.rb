@@ -34,9 +34,9 @@ describe "Completing todo items" do
     it "does not give the option to mark complete" do
       visit_todo_list todo_list
       within("#todo_item_#{todo_item.id}") do
-        expect(page).to_not have_content("Mark Complete")
+        expect(page).to_not have_content("Completed ?")
+
       end
     end
-
   end
 end

@@ -2,30 +2,42 @@
 
     <div class="jumbotron">
       <h1>Open Tech Innovations Web Apps</h1>
-      <p>Lorem</p>
-      <p><a href="http://www.opentechinnovations.net" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p>
+        <p>
+            <a href="http://www.opentechinnovations.net" class="btn btn-primary btn-lg" role="button">Learn more</a>
+        </p>
     </div>
-
     <div class="page-header">
         <h1>Projects <i class="glyphicon glyphicon-new-window"></i></h1>
     </div>
-
     <% @todo_lists.each do |todo_list| %>
     <div class="todo_list" id="<%= dom_id(todo_list) %>">
       <h2><%= todo_list.title %></h2>
       <p><%= todo_list.description %></p>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default"><%= link_to "List Items", todo_list_todo_items_path(todo_list) %></button>
-        <button type="button" class="btn btn-default"><%= link_to 'Show', todo_list %></button>
-        <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_todo_list_path(todo_list) %></button>
-        <button type="button" class="btn btn-default"><%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-      </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">
+                <%= link_to "List Items", todo_list_todo_items_path(todo_list) %>
+            </button>
+            <button type="button" class="btn btn-default">
+                <%= link_to 'Show', todo_list %></button>
+            <button type="button" class="btn btn-default">
+                <%= link_to 'Edit', edit_todo_list_path(todo_list) %>
+            </button>
+            <button type="button" class="btn btn-default">
+                <%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </button>
+          </div>
       <br class="clear" />
     </div>
 <% end %>
-
 <br>
-
-<button type="button" class="btn btn-success btn-lg"><%= link_to 'New Todo list', new_todo_list_path %></button>
+<button type="button" class="btn btn-success btn-lg">
+    <%= link_to 'New Todo list', new_todo_list_path %>
+</button>
 
 
