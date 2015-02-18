@@ -16,7 +16,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav">
+        <div class="row">
+            <div class="nav">
           <h1><i class="glyphicon glyphicon-leaf"></i> <%= link_to "OTI", root_path %></h1>
                   <ul>
                     <li><%= link_to "Projects", todo_lists_path %></li>
@@ -29,6 +30,7 @@
             </div>
         <% end %>
         <%= yield %>
+        </div>
     </div>
 </body>
 </html>
